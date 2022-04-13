@@ -1,5 +1,5 @@
 {
-  "name": "loremipsum-module",
+  "name": "web-components-review-module-loremipsum",
   "version": "1.0.0",
   "description": "A simple loremipsum web component module",
   "main": "./src/LoremIpsumModule.js",

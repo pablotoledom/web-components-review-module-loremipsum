@@ -68,7 +68,7 @@
     }
     
     // Lifecycle
-    // When component is connected
+    // When the component is connected
     connectedCallback() {
       console.log('LoremIpsum module element added to page.');
     }
@@ -90,7 +90,7 @@
       }
     }
       
-    // When component is removed
+    // When the component is removed
     disconnectedCallback() {
       console.log('LoremIpsum module element removed from page.');
     }

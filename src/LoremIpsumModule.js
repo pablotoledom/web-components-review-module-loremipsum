@@ -68,17 +68,17 @@
     }
     
     attributeChangedCallback(name, oldValue, newValue) {
-      if (name == 'width'){
-        this.shadowRoot.querySelector('#module-content').style.width = `${newValue}%`;
-      }
-      if (name == 'text-align'){
-        this.shadowRoot.querySelector('#module-content').style.textAlign = newValue;
-      }
       if (name == 'force-fail') {
         if(newValue) {
           const fail = null;
           fail.test();
         }
+      }
+      if (name == 'width'){
+        this.shadowRoot.querySelector('#module-content').style.width = `${newValue}%`;
+      }
+      if (name == 'text-align'){
+        this.shadowRoot.querySelector('#module-content').style.textAlign = newValue;
       }
     }
   }

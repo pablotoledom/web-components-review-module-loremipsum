@@ -76,12 +76,6 @@
     // When any of observed attributes has changed
     attributeChangedCallback(name, oldValue, newValue) {
       console.log('LoremIpsum module has seen a change.');
-      if (name == 'force-fail') {
-        if(newValue) {
-          const fail = null;
-          fail.test();
-        }
-      }
       if (name == 'width'){
         this.shadowRoot.querySelector('#module-content').style.width = `${newValue}%`;
       }

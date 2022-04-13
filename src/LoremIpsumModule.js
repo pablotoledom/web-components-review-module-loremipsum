@@ -64,7 +64,7 @@
     }
     
     static get observedAttributes() {
-      return ['width', 'text-align'];
+      return ['width', 'text-align', 'force-fail'];
     }
     
     attributeChangedCallback(name, oldValue, newValue) {
@@ -73,6 +73,12 @@
       }
       if (name == 'text-align'){
         this.shadowRoot.querySelector('#module-content').style.textAlign = newValue;
+      }
+      if (name == 'force-fail') {
+        if(newValue) {
+          const fail = null;
+          fail.test();
+        }
       }
     }
   }
